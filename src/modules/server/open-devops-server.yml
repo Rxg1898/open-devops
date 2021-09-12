@@ -1,0 +1,6 @@
+mysql_s:
+  - name: stree
+    addr: "root:kubernetes@2020@tcp(121.36.50.10:3306)/open_devops?charset=utf8mb4&parseTime=True&loc=Asia%2FShanghai"
+    max: 128
+    idel: 16
+    debug: false
