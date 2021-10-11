@@ -8,16 +8,7 @@ import (
 )
 
 type Config struct {
-	MysqlS  []*MySQLConf `yaml:"mysql_s"`
-	RpcAddr string       `yaml:"rpc_addr"`
-}
-
-type MySQLConf struct {
-	Name  string `yaml:"name"`
-	Addr  string `yaml:"addr"`
-	Max   int    `yaml:"max"`
-	Idel  int    `yaml:"idel"`
-	Debug bool   `yaml:"debug"`
+	RpcServerAddr string `yaml:"rpc_server_addr"`
 }
 
 // 根据io read读取配置文件后的字符串解析yaml
